@@ -67,6 +67,33 @@ public class Main {
         float totalWeightKg = totalWeightG / 1000f;
         System.out.println("Вес спортзавтрака составляет " + totalWeightG + " грамм или " + totalWeightKg + " кг" );
         System.out.println();
-
+        int lostWeight = 7 * 1000;
+        int lostWeightInDayMin = 250;
+        int lostWeightInDayMax = 500;
+        int daysMax = lostWeight / lostWeightInDayMin;
+        int daysMin = lostWeight / lostWeightInDayMax;
+        int daysAverage = (daysMin + daysMax) / 2;
+        System.out.println(daysMax + " дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм");
+        System.out.println(daysMin + " дней уйдет на похудение, если спортсмен будет терять каждый день по 500 грамм");
+        System.out.println(daysAverage + " дней уйдет на похудение в среднем");
+        System.out.println();
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        int annualSalaryMasha = salaryMasha * 12;
+        int annualSalaryDenis = salaryDenis * 12;
+        int annualSalaryKristina = salaryKristina * 12;
+        double newSalaryMasha = salaryMasha * 0.1 + salaryMasha;
+        double newSalaryDenis = salaryDenis * 0.1 + salaryDenis;
+        double newSalaryKristina = salaryKristina * 0.1 + salaryKristina;
+        double newAnnualSalaryMasha = newSalaryMasha * 12;
+        double newAnnualSalaryDenis =  newSalaryDenis * 12;
+        double newAnnualSalaryKristina =  newSalaryKristina * 12;
+        double increaseInAnnualSalaryMasha = newAnnualSalaryMasha - annualSalaryMasha;
+        double increaseInAnnualSalaryDenis = newAnnualSalaryDenis - annualSalaryDenis;
+        double increaseInAnnualSalaryKristina = newAnnualSalaryKristina - annualSalaryKristina;
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + increaseInAnnualSalaryMasha + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + increaseInAnnualSalaryDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + increaseInAnnualSalaryKristina + " рублей");
     }
 }
